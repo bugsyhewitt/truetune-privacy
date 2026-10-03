@@ -32,7 +32,7 @@
 <body>
   <h1>Privacy Policy</h1>
   <p class="sub">TrueTune — Tuner &amp; Metronome</p>
-  <p><strong>Last updated: September 25, 2026</strong></p>
+  <p><strong>Last updated: October 2, 2026</strong></p>
 
   <div class="badge">TrueTune collects no data. None.</div>
 
@@ -66,8 +66,25 @@
     The core app works fully offline, and the app itself does not request internet access. Every
     feature is free. If you choose to leave an optional tip (Settings → Donate), Google Play
     handles the purchase under Google's own privacy policy; we never see your payment details, and
-    the app keeps no record of it. A tip unlocks nothing, and the app never asks.
+    the app keeps no record of the payment. A tip unlocks nothing, and the app never asks.
   </p>
+  <p>
+    Google's billing library, which the tip jar uses, includes a diagnostics component that would send anonymous billing diagnostics to Google. TrueTune has no internet permission, so Android blocks it and nothing is sent. While a tip you started is still being finished, TrueTune keeps a small marker on your device so it can complete the tip the next time you open it; it never records what you paid.
+  </p>
+
+  <h2>Permissions, in plain terms</h2>
+  <ul>
+    <li><strong>Microphone</strong> — only while the Tuner screen is open, to hear the note you play.
+      Optional: without it the metronome and the rest of the app still work.</li>
+    <li><strong>Foreground service / media playback</strong> — so the metronome keeps time with the
+      screen off or while you use another app.</li>
+    <li><strong>Notifications</strong> — to show the metronome's ongoing notification and its Stop
+      control.</li>
+    <li><strong>Google Play billing</strong> (and <strong>view network connections</strong>, which Google's
+      billing library adds) — only to take an optional tip, if you choose to leave one. Google Play
+      handles the payment; the app receives no payment details.</li>
+  </ul>
+  <p>TrueTune does not request camera, location, contacts or storage access.</p>
 
   <h2>Children's privacy</h2>
   <p>
